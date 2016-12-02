@@ -14,7 +14,254 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
+  </head>
+  <body>
+    <!-- Use .container for a responsive fixed width container. -->
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Modify the look of the navbar by adding .navbar-inverse. -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">TIY Sports</a>
+        </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Players</a></li>
+            <li><a href="#">Games</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" size="14" placeholder="Search">
+                <span class="input-group-addon">
+                  <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+<!-- -?- How does *Media* tag work?  ended up stealing from Gavin b/c other methods didn't work.  -->
+        <div class="media">
+          <div class="media-body">
+            <h1 class="media-heading">TIY Sports</h1>
+              <span class="glyphicon glyphicon-heart"></span>
+<!-- -?- How can this text exist outside of a <p> class?  -->
+              For the students of The Iron Yard
+          </div>
+
+          <div class="media-right">
+            <img src="assets/images/sports.jpg" class="img-circle" alt="Sports-Jumbotron" width="204" height="136">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class= "col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/football.jpg" alt="Football">
+          <h4>Football</h4>
+          </div>
+        </div>
+
+        <div class= "col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/baseball.jpg" alt="Baseball">
+          <h4>Baseball</h4>
+          </div>
+        </div>
+
+
+        <div class= "col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/basketball.jpg" alt="Basketball">
+          <h4>Basketball</h4>
+          </div>
+        </div>
+
+
+        <div class= "col-md-3">
+          <div class="thumbnail">
+            <img src="assets/images/quidditch.jpg" alt="Quidditch">
+          <h4>Quidditch</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="alert alert-warning">
+
+        <span>
+          <h4>We've added some brand new features in version 2.0!  <a href="#">Learn More!</a>
+          </h4>
+        </span>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="panel-group">
+        <div class="panel panel-default">
+<!-- -?- Why isn't this panel bar grey as *panel-default* ?  -->
+          <div class="media">
+<!-- -?- Why can't I use Media tags for the placement here but was able to in nav-bar? -->
+            <div class"media-left">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <span>Please <strong>log in</strong> to edit</span>
+            </div>
+
+            <div class="media-right">
+              <button type="button" class="btn btn-primary">FACEBOOK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <i class="fa fa-chevron-circle-right"></i>
+            Teams <span class="badge pull-right">317 Teams</span>
+          </h3>
+        </div>
+<!-- -?- Why don't each of my *media boxes* have a bottom boarder?  -->
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object img-rounded" src="assets/images/dartboard.png" alt="dartboard" width="64" height="64">
+            </a>
+          </div>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+                Tampa Dart Dynamos
+               <span class="badge pull-right">8 players</span>
+<!-- -?- Why do the player-counts pull to the edge but 317 teams has a margin?   -->
+            </h4>
+                Some Latin
+          </div>
+        </div>
+<!-- -?- Why don't each of my *media boxes* have a bottom boarder?  -->
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object img-rounded" src="assets/images/pingpong.jpg" alt="pingpong" width="64" height="64">
+            </a>
+          </div>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+                St Pete Ping Pong Power House
+               <span class="badge pull-right">8 players</span>
+<!-- -?- Why do the player-counts pull to the edge but 317 teams has a margin?   -->
+            </h4>
+                More Latin
+          </div>
+        </div>
+<!-- -?- Why don't each of my *media boxes* have a bottom boarder?  -->
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object img-rounded" src="assets/images/golf.jpg" alt="golf" width="64" height="64">
+            </a>
+          </div>
+
+          <div class="media-body">
+            <h4 class="media-heading">
+                Orlando Golf Gang
+               <span class="badge pull-right">8 players</span>
+<!-- -?- Why do the player-counts pull to the edge but 317 teams has a margin?   -->
+            </h4>
+                Other Latin
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-footer">
+        <nav class="text-center">
+          <ul class="pagination pagination-lg">
+            <li><a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+
+<!-- -?- Why do box borders not reach to the edge of the container?   -->
+    <div class="container-fluid">
+      <div class="panel panel-primary">
+      <div class="panel-heading">Games</div>
+        <div class="panel-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Home Team</th>
+              <th>Away Team</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="success">
+              <td>1</td>
+              <td>Tampa Dart Dynamos</td>
+              <td>BuffaloBullsEyes</td>
+              <td>20-17</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>St Pete Ping Pong Power House</td>
+              <td>Philly Paddlers</td>
+              <td>18-12</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Orlando Golf Gang</td>
+              <td>Portland Putters</td>
+              <td>2-1</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+                <style>
       /* A little styling to improve the design */
 
       .img-rounded {
@@ -42,8 +289,7 @@
         margin: 10px 20px;
       }
     </style>
-  </head>
-  <body>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
